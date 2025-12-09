@@ -198,4 +198,3 @@ button {
 }
 
 button:hover { background: var(--border); }
-#btnExecute { background: var(--accent); color: var(--bg); border-color: var(--accent); }
