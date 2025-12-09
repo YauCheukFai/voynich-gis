@@ -1,0 +1,201 @@
+:root {
+    --bg: #0d1117;
+    --fg: #c9d1d9;
+    --accent: #58a6ff;
+    --border: #30363d;
+    --panel: #161b22;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 1.2rem; letter-spacing: 2px; color: var(--accent); margin: 0; }
+a { color: var(--fg); text-decoration: none; border: 1px solid var(--border); padding: 5px 10px; font-size: 0.8rem; }
+a:hover { background: var(--border); }
+
+
+.workspace {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-height: 0;
+}
+
+.input-section {
+    flex: 0 0 150px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #21262d;
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+.title { margin-left: 10px; font-size: 0.8rem; color: #8b949e; }
+
+.editor-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+textarea {
+    background: transparent;
+    color: var(--fg);
+    border: none;
+    resize: none;
+    padding: 10px 10px 10px 45px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex: 1;
+    outline: none;
+}
+
+.status-bar {
+    background: var(--border);
+    color: var(--fg);
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.preview-pane {
+    background: #fff;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.placeholder { color: #ccc; font-size: 0.8rem; letter-spacing: 1px; }
+
+.component {
+    border: 2px solid #000;
+    margin: -10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: rgba(0,0,0,0.05);
+}
+
+.vase-structure { width: 100px; height: 120px; border-radius: 0 0 40px 40px; border-top: none; }
+.root-tuber { width: 120px; height: 80px; border-radius: 50%; background: #e0e0e0; }
+.stem-basic { width: 10px; height: 150px; background: #2e7d32; border: none; }
+.root-bulb-fibrous { width: 80px; height: 80px; border-radius: 50% 50% 0 50%; border-bottom: 4px dashed #000; }
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #0d1117;
+    border-top: 1px solid var(--border);
+}
+
+.visual-section {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    min-height: 0;
+}
+
+.view-pane {
+    flex: 1;
+    background: #161b22;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pane-label {
+    background: #21262d;
+    color: #8b949e;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    border-bottom: 1px solid var(--border);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#canvas, #reference {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#reference img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 1px dashed #ccc;
+}
+
+button {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+button:hover { background: var(--border); }
+#btnExecute { background: var(--accent); color: var(--bg); border-color: var(--accent); }

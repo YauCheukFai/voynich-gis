@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voynich GIS: Interactive Terminal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VOYNICH GIS TERMINAL [v1.0]</h1>
+            <nav>
+                <a href="index.html">_BACK_TO_LOGS</a>
+            </nav>
+        </header>
+
+        <main class="workspace">
+            <div class="input-section">
+                <div class="terminal-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="title">COMMAND_INPUT</span>
+                </div>
+                <div class="editor-wrapper">
+                    <div class="line-numbers">1<br>2</div>
+                    <textarea id="gisInput" placeholder="// Try typing: pchor (Vase) or qotor (Tuber)..." spellcheck="false"></textarea>
+                </div>
+                <div class="controls">
+                    <button id="btnExecute">EXECUTE_CODE [CTRL+ENTER]</button>
+                    <div class="status-bar">STATUS: WAITING_FOR_INPUT</div>
+                </div>
+            </div>
+
+            <div class="visual-section">
+                <div class="view-pane" id="genPane">
+                    <div class="pane-label">_GENERATED_OUTPUT (GIS)</div>
+                    <div id="canvas" class="canvas-empty">
+                        <span class="placeholder">_NO_DATA</span>
+                    </div>
+                </div>
+
+                <div class="view-pane" id="refPane">
+                    <div class="pane-label">_MANUSCRIPT_REFERENCE (1404 AD)</div>
+                    <div id="reference" class="canvas-empty">
+                        <span class="placeholder">_AWAITING_MATCH</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/gis_engine.js"></script>
+    <footer style="text-align: center; padding: 40px 20px; color: #484f58; font-size: 0.8rem; border-top: 1px solid #30363d; margin-top: 40px;">
+        <p>
+            VOYNICH GIS PROJECT [v1.0] <br>
+            Built by <strong style="color: #c9d1d9;">Yau, Cheuk-Fai</strong>. Based on the research of <strong style="color: #c9d1d9;">Jérémie Émile</strong>.
+        </p>
+        <p style="margin-top: 10px;">
+            Code licensed under <a href="LICENSE" style="color: #58a6ff; text-decoration: none;">MIT</a>. 
+            Content & Theory © 2025.
+        </p>
+    </footer>
+</body>
+</html>
