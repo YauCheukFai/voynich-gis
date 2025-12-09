@@ -90,7 +90,3 @@ btnClear.addEventListener('click', () => {
     canvas.innerHTML = '<span class="placeholder">_WAITING_FOR_INSTRUCTION</span>';
     status.textContent = 'STATUS: READY';
 });
-
-input.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.key === 'Enter') btnExec.click();
-});
