@@ -59,3 +59,16 @@ cd voynich-gis
 
 # Open index.html in your browser
 # (No build process required. It's raw, vanilla JS.)
+```
+
+## 📚 The Research
+
+This project is the digital companion to our academic paper.
+
+*   **Full Paper:** [A Generative Instruction Set for the Voynich Manuscript](https://doi.org/10.5281/zenodo.16981869)
+*   **Authors:** Jérémie Émile & Yau, Cheuk-Fai
+
+## 📄 License
+
+Code is open-sourced under the **MIT License**.
+The GIS Theory and original research content are © 2025 Jérémie Émile & Yau, Cheuk-Fai.
