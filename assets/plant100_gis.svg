@@ -1,0 +1,28 @@
+<svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .main-line { stroke: #58a6ff; stroke-width: 4; stroke-linecap: round; fill: none; }
+        .guide-line { stroke: #58a6ff; stroke-width: 1; stroke-dasharray: 5, 5; opacity: 0.6; }
+        .text-label { fill: #58a6ff; font-family: 'Courier New', monospace; font-size: 12px; text-anchor: middle; }
+    </style>
+
+    <line x1="100" y1="20" x2="100" y2="280" class="guide-line" />
+
+    <line x1="100" y1="50" x2="100" y2="150" class="main-line" />
+
+    <path d="M 100 150 
+             C 100 180, 60 180, 60 240" 
+          class="main-line" />
+          
+    <path d="M 100 150 
+             C 100 180, 140 180, 140 240" 
+          class="main-line" />
+
+    <circle cx="100" cy="150" r="4" fill="#58a6ff" />
+
+    <text x="100" y="10" class="text-label">Root Context (qo)</text>
+    <text x="150" y="160" class="text-label" style="text-anchor: start;">Split Point</text>
+    <line x1="105" y1="150" x2="145" y2="155" class="guide-line" />
+
+    <text x="100" y="270" class="text-label">Bifurcated Form</text>
+    <text x="100" y="285" class="text-label">(tshol)</text>
+</svg>

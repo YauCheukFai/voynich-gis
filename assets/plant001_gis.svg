@@ -1,0 +1,18 @@
+<svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .main-line { stroke: #58a6ff; stroke-width: 3; stroke-linecap: round; }
+        .guide-line { stroke: #58a6ff; stroke-width: 1; stroke-dasharray: 5, 5; opacity: 0.6; }
+        .text-label { fill: #58a6ff; font-family: 'Courier New', monospace; font-size: 12px; text-anchor: middle; }
+    </style>
+
+    <line x1="100" y1="50" x2="100" y2="250" class="guide-line" />
+
+    <circle cx="100" cy="120" r="40" class="main-line" />
+
+    <line x1="100" y1="70" x2="100" y2="220" class="main-line" />
+    <line x1="90" y1="158" x2="70" y2="210" class="main-line" />
+    <line x1="110" y1="158" x2="130" y2="210" class="main-line" />
+
+    <text x="100" y="40" class="text-label">Core (chor)</text>
+    <text x="100" y="270" class="text-label">Appendage (dar)</text>
+</svg>

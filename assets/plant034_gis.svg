@@ -1,0 +1,20 @@
+<svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Style Definition -->
+    <style>
+        .main-line { stroke: #58a6ff; stroke-width: 3; stroke-linecap: round; }
+        .guide-line { stroke: #58a6ff; stroke-width: 1; stroke-dasharray: 5, 5; opacity: 0.7; }
+        .text-label { fill: #58a6ff; font-family: 'Courier New', monospace; font-size: 14px; }
+    </style>
+
+    <line x1="100" y1="20" x2="100" y2="280" class="guide-line" />
+
+    <ellipse cx="100" cy="80" rx="60" ry="15" class="main-line" />
+
+    <line x1="40" y1="80" x2="40" y2="220" class="main-line" />
+    <line x1="160" y1="80" x2="160" y2="220" class="main-line" />
+
+    <path d="M40 220 Q100 250 160 220" class="main-line" />
+
+    <text x="110" y="270" class="text-label">chor (Core)</text>
+    <text x="0" y="50" class="text-label">p- (Container)</text>
+</svg>
